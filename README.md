@@ -53,7 +53,7 @@ You cannot use an operator while another operator is in use
 Every operator needs a ":" after it to indicate that it needs to run and to end the instruction
 
 ## Other instructions:
-~: Toggles the "drawing" of the turtle on or off (~> would move to the right without drawing)
+\~: Toggles the "drawing" of the turtle on or off (~> would move to the right without drawing)
 
 ## Example Programs:
 CAT program:
