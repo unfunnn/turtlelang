@@ -33,7 +33,7 @@ Directionals cannot be used while an operator is also in use
 
 @: Outputs the variable that you are currently on (@:, no arguments needed)
 
-$: Asks the user for input and stores it ($:, no arguments needed)
+\$: Asks the user for input and stores it (\$:, no arguments needed)
 
 |: Outputs a literal instead of a variable (|literal goes here:)
 
