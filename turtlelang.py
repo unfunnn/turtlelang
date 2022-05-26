@@ -39,7 +39,7 @@ def get_pixel(coord):
         grid[int(coord[0])][int(coord[1])]
 
 
-print("turtlelang v1.0.0")
+print("turtlelang v1.1.0")
 print("An esolang where you control a turtle and each position is a variable")
 print(
     "Type \"exit\" to exit, \"open\" to open a .turt file, and \"compile\" to compile everything from this session into a single line")
