@@ -30,12 +30,13 @@ $: Asks the user for input and stores it ($:, no arguments needed)
 &: Stores a random number between given args (&1,5 would choose a random number between 1 and 5)
 #: Comment, is ignored (#comment:)
 .: Duplicates the pos you are currently on to another one of your choice (.00: would copy the data off whatever pos you're at to 00)
-[]: Loops are coming soon
 You cannot use an operator while another operator is in use
 Every operator needs a ":" after it to indicate that it needs to run and to end the instruction
 
 Other instructions:
 ~: Toggles the "drawing" of the turtle on or off (~> would move to the right without drawing)
+_: Acts as a "goto" for loops
+[]: While loop, has the same syntax as the conditional minus the last two args, since it doesn't need anything to set. If the condition inside the loop is met, it will continue the code, else it will go back to the nearest _ in your code before the brackets. Nesting is not a thing yet. (somecode_code to repeat[00,00,=]code to execute after)
 
 Example Programs:
 CAT program:
@@ -48,7 +49,10 @@ Draw a spiral:
 vvvv>>>>^^^<<v
 
 Random Number Guessing Game:
-&1,5:>$:>?00,01,=,correct,incorrect:@:<<<| correct guess was :@:
+&1,5:>_$:[00,01,=]|correct:<<
+
+Countdown from 5:
+%5:>%1:>%0:<<_@:-00,01:[00,02,<]|Lift Off!:
 
 Fibonnaci (first 9 numbers)
 %0:@:| :>%1:@:| :>+00,01:@:| :<.00:>.01:+00,01:@:| :<.00:>.01:+00,01:@:| :<.00:>.01:+00,01:@:| :<.00:>.01:+00,01:@:| :<.00:>.01:+00,01:@:| :<.00:>.01:+00,01:@:| :<.00:>.01:
