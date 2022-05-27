@@ -54,7 +54,6 @@ while True:
         if instructions[character_i] == "_":
             position_waypoint_list.append(character_i)
         character_i+=1
-    print(position_waypoint_list)
 
     if instructions == "exit":
         quit(0)
