@@ -39,7 +39,7 @@ def get_pixel(coord):
         grid[int(coord[0])][int(coord[1])]
 
 
-print("turtlelang v1.1.0")
+print("turtlelang v1.0.0")
 print("An esolang where you control a turtle and each position is a variable")
 print(
     "Type \"exit\" to exit, \"open\" to open a .turt file, and \"compile\" to compile everything from this session into a single line")
@@ -154,17 +154,17 @@ while True:
                         grid[int(turtle_pos[0])][int(turtle_pos[1])] = inp
                         current_process = None
                 elif current_process == "add":
-                    if instructions[i] == ":":
-                        grid[int(turtle_pos[0])][int(turtle_pos[1])] = int(get_pixel(temp_list[0])) + int(
-                            get_pixel(temp_list[1]))
-                        temp_str = ""
-                        current_process = None
-                        temp_list = ["", ""]
-                        current_index = 0
-                    elif instructions[i] == ",":
-                        current_index += 1
-                    else:
-                        temp_list[current_index] += instructions[i]
+                        if instructions[i] == ":":
+                            grid[int(turtle_pos[0])][int(turtle_pos[1])] = int(get_pixel(temp_list[0])) + int(
+                                get_pixel(temp_list[1]))
+                            temp_str = ""
+                            current_process = None
+                            temp_list = ["", ""]
+                            current_index = 0
+                        elif instructions[i] == ",":
+                            current_index += 1
+                        else:
+                            temp_list[current_index] += instructions[i]
 
                 elif current_process == "sub":
                     if instructions[i] == ":":
