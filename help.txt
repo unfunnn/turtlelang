@@ -3,8 +3,6 @@ turtlelang is an esolang (esoteric language) that uses a turtle as a "pointer" a
 
 This language does not need newlines or tabs, everything can be entered on one line
 
-This language is not turning complete yet due to the lack of loops. 
-
 Because it is a turtle that draws, you can use this to create monochrome pixel art if you wish
 
 CLI:
