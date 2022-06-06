@@ -40,6 +40,9 @@ Example Programs:
 CAT program:
 $:@:
 
+Endless Cat Program:
+_$:@:[00,00,!]
+
 Program that adds (replace the + with -, *, or / for that operator) two numbers inputted by the user together:
 $:>$:>+00,01:@:
 
